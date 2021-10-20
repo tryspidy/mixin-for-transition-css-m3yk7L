@@ -1,0 +1,10 @@
+/* Mixin for transition css */
+@mixin transition($for: all, $time-in: 250ms, $type: ease-in-out, $time-out: 0s) {
+    transition: $for $time-in $type $time-out;
+    -moz-transition: $for $time-in $type $time-out;
+    -webkit-transition: $for $time-in $type $time-out;
+    -o-transition: $for $time-in $type $time-out;
+}
+
+/* IE10 (the first stable version of IE to support transition)
+does not require the -ms- prefix. */
